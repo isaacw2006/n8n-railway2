@@ -4,7 +4,7 @@ WORKDIR /data
 
 RUN npm install cheerio axios moment
 RUN npm uninstall sharp
-RUN npm install sharp --platform=linuxmusl --arch=x64
+RUN npm install --force @img/sharp-linux-x64
 
 
 USER node
